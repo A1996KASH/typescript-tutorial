@@ -17,8 +17,17 @@ function consoleMsg(msg: string): void {
 function throwError(msg: string): never {
     throw new Error(msg);
 }
+const newFuction = (num1: number): string | boolean => {
+    if(num1 > 5) {
+        return true
+    }
+    return 'Hello'
+}
+
 addTwo(2) // return type is not defined can return string also
 addTwoNNumbers(45)
 consoleMsg('Hello')
 throwError('Error occured')
+
+
 export {}
